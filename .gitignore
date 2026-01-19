@@ -6,3 +6,5 @@
 dist/
 public/bundle/*
 node_modules/
+
+package.json
