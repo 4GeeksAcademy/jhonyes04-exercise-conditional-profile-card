@@ -18,122 +18,175 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="row g-4 flex-wrap">
-        <div class="col-12 col-md-6 mt-2 mt-md-5">
-          <div id="widget_content"></div>
-        </div>
-        <div class="col-12 col-md-6 mt-2 mt-md-5">
+    <div class="container mt-5">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 mb-2 mb-md-0 mt-2 mt-md-5">
           <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Personal Information</h5>
-            </div>
             <div class="card-body">
-              <div class="form-floating mb-3">
-                <input class="picker form-control" for="name" type="text" />
-                <label for="name">Name</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input class="picker form-control" for="lastName" type="text" />
-                <label for="lastName">Last Name</label>
-              </div>
-              <div class="form-floating mb-3">
-                <select class="picker form-select" for="role">
-                  <option value="">null</option>
-                  <option value="Web Developer">Web Developer</option>
-                  <option value="Floor Planner">Floor Planner</option>
-                  <option value="Technical Writter">Technical Writter</option>
-                </select>
-                <label for="role">Role</label>
-              </div>
-              <div class="form-floating mb-3">
-                <select class="picker form-select" for="city">
-                  <option value="">null</option>
-                  <option value="Miami">Miami</option>
-                  <option value="Munich">Munich</option>
-                  <option value="Caracas">Caracas</option>
-                  <option value="Toronto">Toronto</option>
-                </select>
-                <label for="city">City</label>
-              </div>
-              <div class="form-floating">
-                <select class="picker form-select" for="country">
-                  <option value="">null</option>
-                  <option value="USA">USA</option>
-                  <option value="Germany">Germany</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Venezuela">Venezuela</option>
-                </select>
-                <label for="country">Country</label>
-              </div>
+              <div id="widget_content"></div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 mb-md-5">
+        <div class="col-12 col-md-6 mb-4 mt-0 mt-md-5">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Social</h5>
+              <ul class="nav nav-underline justify-content-center">
+                <li class="nav-item" role="presentation">
+                  <a
+                    href="#personal"
+                    class="nav-link active"
+                    data-bs-toggle="pill"
+                    type="button"
+                    role="tab"
+                  >
+                    Personal Information
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    href="#social"
+                    class="nav-link"
+                    data-bs-toggle="pill"
+                    type="button"
+                    role="tab"
+                  >
+                    Social
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    href="#desing"
+                    class="nav-link"
+                    data-bs-toggle="pill"
+                    type="button"
+                    role="tab"
+                  >
+                    Desing
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="card-body">
-              <div class="form-floating mb-3">
-                <input class="picker form-control" for="twitter" type="text" />
-                <label for="twitter">Twitter</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input class="picker form-control" for="github" type="text" />
-                <label>Github</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input class="picker form-control" for="linkedin" type="text" />
-                <label for="linkedin">LinkedIn</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  class="picker form-control"
-                  for="instagram"
-                  type="text"
-                />
-                <label for="instagram">Instagram</label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 mb-5">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Design</h5>
-            </div>
-            <div class="card-body">
-              <div class="form-floating mb-3">
-                <select class="picker form-select" for="includeCover">
-                  <option value="">Include Cover</option>
-                  <option value="true">True</option>
-                  <option value="false">False</option>
-                </select>
-                <label for="includeCover">Include Cover</label>
-              </div>
-              <div class="form-floating mb-3">
-                <select class="picker form-select" for="socialMediaPosition">
-                  <option value="position-left">Left</option>
-                  <option value="position-right">Right</option>
-                </select>
-                <label for="socialMediaPosition">S.M. Position</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input
-                  type="text"
-                  for="background"
-                  class="picker form-control"
-                />
-                <label for="background">Background URL</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="text"
-                  for="avatarURL"
-                  class="picker form-control"
-                />
-                <label for="avatarURL">Avatar URL</label>
+              <div class="tab-content mt-2">
+                <div
+                  id="personal"
+                  class="tab-pane fade show active"
+                  role="tabpanel"
+                >
+                  <div class="form-floating mb-3">
+                    <input class="picker form-control" for="name" type="text" />
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      class="picker form-control"
+                      for="lastName"
+                      type="text"
+                    />
+                    <label for="lastName">Last Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <select class="picker form-select" for="role">
+                      <option value="">null</option>
+                      <option value="Web Developer">Web Developer</option>
+                      <option value="Floor Planner">Floor Planner</option>
+                      <option value="Technical Writter"
+                        >Technical Writter</option
+                      >
+                    </select>
+                    <label for="role">Role</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <select class="picker form-select" for="city">
+                      <option value="">null</option>
+                      <option value="Miami">Miami</option>
+                      <option value="Munich">Munich</option>
+                      <option value="Caracas">Caracas</option>
+                      <option value="Toronto">Toronto</option>
+                    </select>
+                    <label for="city">City</label>
+                  </div>
+                  <div class="form-floating">
+                    <select class="picker form-select" for="country">
+                      <option value="">null</option>
+                      <option value="USA">USA</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Venezuela">Venezuela</option>
+                    </select>
+                    <label for="country">Country</label>
+                  </div>
+                </div>
+                <div id="social" class="tab-pane fade" role="tabpanel">
+                  <div class="form-floating mb-3">
+                    <input
+                      class="picker form-control"
+                      for="twitter"
+                      type="text"
+                    />
+                    <label for="twitter">Twitter</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      class="picker form-control"
+                      for="github"
+                      type="text"
+                    />
+                    <label>Github</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      class="picker form-control"
+                      for="linkedin"
+                      type="text"
+                    />
+                    <label for="linkedin">LinkedIn</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      class="picker form-control"
+                      for="instagram"
+                      type="text"
+                    />
+                    <label for="instagram">Instagram</label>
+                  </div>
+                </div>
+                <div id="desing" class="tab-pane fade" role="tabpanel">
+                  <div class="form-floating mb-3">
+                    <select class="picker form-select" for="includeCover">
+                      <option value="">Include Cover</option>
+                      <option value="true">True</option>
+                      <option value="false">False</option>
+                    </select>
+                    <label for="includeCover">Include Cover</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <select
+                      class="picker form-select"
+                      for="socialMediaPosition"
+                    >
+                      <option value="position-left">Left</option>
+                      <option value="position-right">Right</option>
+                    </select>
+                    <label for="socialMediaPosition">S.M. Position</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      for="background"
+                      class="picker form-control"
+                    />
+                    <label for="background">Background URL</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      for="avatarURL"
+                      class="picker form-control"
+                    />
+                    <label for="avatarURL">Avatar URL</label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

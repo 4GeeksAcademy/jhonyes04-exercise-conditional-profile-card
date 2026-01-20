@@ -1,5 +1,10 @@
 .container {
   text-align: center;
+  min-width: 360px;
+}
+
+.tab-content {
+  min-height: 370px;
 }
 
 /* .filters {
@@ -79,30 +84,35 @@
   background: #2cdfd3;
 }
 .widget ul.position-left {
-  left: -26px;
+  background: transparent;
+  left: 5px;
 }
 .widget ul.position-right {
-  right: -27px;
+  background: transparent;
+  right: 5px;
 }
 .widget ul li {
   list-style: none;
 }
 .widget ul li a {
   display: block;
-  padding: 5px 6px;
+  padding: 3px 6px;
   color: #fff;
   cursor: pointer;
   text-align: center;
-  border-bottom: 1px solid #2cd5ca;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  /* border-bottom: 1px solid #2cd5ca; */
   transition: background-color 0.3s;
 }
 .widget ul li:hover > a {
   background-color: #2cd5ca;
 }
-.widget ul li:first-child > a {
+/* .widget ul li:first-child > a {
   border-radius: 0 3px 0 0;
 }
 .widget ul li:last-child > a {
   border: none;
   border-radius: 0 0 3px 0;
-}
+} */
