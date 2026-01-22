@@ -30,24 +30,33 @@ function render(variables = {}) {
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
   // reset the website body with the new html output
-  document.querySelector("#widget_content").innerHTML = `<div class="widget">
-            ${cover}
-          <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name || "Lucy"} ${variables.lastName ||
+  document.querySelector("#widget_content").innerHTML = `
+    <div class="card">
+      <div class="card-header">
+        <h6 class="card-title">Example Profile Card</h6>
+      </div>
+      <div class="card-body">
+        <div class="widget">
+              ${cover}
+            <img src="${variables.avatarURL}" class="photo" />
+            <h1>${variables.name || "Lucy"} ${variables.lastName ||
     "Boilett"}</h1>
-          <h2>${variables.role || "Web Developer"}</h2>
-          <h3>${variables.city || "Miami"}, ${variables.country || "USA"}</h3>
-          <ul class="${variables.socialMediaPosition}">
-            <li><a href="https://twitter.com/${variables.twitter ||
-              "4geeksacademy"}" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/${variables.github ||
-              "4geeksacademy"}" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/${variables.linkedin ||
-              "school/4geeksacademy"}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/${variables.instagram ||
-              "4geeksacademy"}" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
+            <h2>${variables.role || "Web Developer"}</h2>
+            <h3>${variables.city || "Miami"}, ${variables.country || "USA"}</h3>
+            <ul class="${variables.socialMediaPosition}">
+              <li><a href="https://twitter.com/${variables.twitter ||
+                "4geeksacademy"}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://github.com/${variables.github ||
+                "4geeksacademy"}" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://linkedin.com/${variables.linkedin ||
+                "school/4geeksacademy"}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://instagram.com/${variables.instagram ||
+                "4geeksacademy"}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+        
     `;
 }
 
